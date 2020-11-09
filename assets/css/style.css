@@ -2485,7 +2485,7 @@ input[type=submit] {
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font-family : 'Roboto Regular';
+  /* font-family : 'Roboto Regular'; */
   font-size: 28px;
   letter-spacing: .1em;
   text-decoration: none;
@@ -2502,7 +2502,7 @@ input[type=submit] {
 #section03 a span {
   position: absolute;
   top: 0;
-  left: 50%;
+  /* left: 50%; */
   width: 46px;
   height: 46px;
   margin-left: -23px;
