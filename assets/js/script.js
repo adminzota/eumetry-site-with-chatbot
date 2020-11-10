@@ -50,31 +50,39 @@ function closeDemoRequest(){
 
 window.onload = function () {
 
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.Width;
+  if(width < 575){
+    document.getElementsByClassName("nav-item").item(0).classList.remove("col-3")
+    document.getElementsByClassName("nav-item").item(0).classList.add("col-6")
+    document.getElementsByClassName("nav-item").item(1).classList.remove("col-3")
+    document.getElementsByClassName("nav-item").item(1).classList.add("col-6")
+  }
+
   document.getElementById('tab-2-link').classList.add('active')
 
   var tab_clicked = 0
   document.getElementById('tab-2-link').onclick = function(){
-    document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(2).classList.remove("active")
-    document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(1).classList.add("active")
+    document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(1).classList.remove("active")
+    document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(0).classList.add("active")
     tab_clicked = 2
   }
 
   document.getElementById('tab-3-link').onclick = function(){
-    document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(1).classList.remove("active")
-    document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(2).classList.add("active")
+    document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(0).classList.remove("active")
+    document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(1).classList.add("active")
     tab_clicked = 3
   }
 
   window.onscroll = function () {
-    if(document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(1).classList.contains("active") && tab_clicked != 3){
-      document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(2).classList.remove("active")
-      document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(4).classList.remove("active")
+    if(document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(0).classList.contains("active") && tab_clicked != 3){
+      document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(1).classList.remove("active")
+      document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(3).classList.remove("active")
       // document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(5).classList.remove("active")
 
     }
     else{
-      document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(1).classList.remove("active")
-      document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(4).classList.remove("active")
+      document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(0).classList.remove("active")
+      document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(3).classList.remove("active")
       // document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(5).classList.remove("active")
     }
     // console.log(document.getElementsByClassName("nav-menu")[0].children.item(0).children.item(1).classList.contains("active"))
