@@ -2786,19 +2786,277 @@ input[type=submit] {
 
 @media (max-width: 1023px) and (min-width: 768px) {
 
- 
+  #myBtn{
+    width: 140px;
+    transform: translate(-67%,-100%);
+
+  }
+  #myBtn1{
+    width: 140px;
+    transform: translate(-67%,-71%);
+
+  }
+  #myBtn2{
+    width: 140px;
+    transform: translate(-67%,-4%);
+
+  }
+  #myBtn3{
+    width: 140px;
+    transform: translate(-67%,-75%);
+
+  }
+  #myBtn4{
+    width: 140px;
+    transform: translate(-67%,-74%);
+
+  }
+  #myBtn5{
+    width: 140px;
+    transform: translate(-67%,-74%);
+
+  }
+  
+.cardos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  line-height: 1.5;
+  height: 430px;
+  width: 350px;
+  transform: translateX(185px);
+  }
 }
 
 
 @media (max-width: 1279px) and (min-width: 1024px) {
 
- 
+  img {
+    vertical-align: middle;
+    border-style: none;
+    /* transform: translateX(13px); */
+  }
+  #edited-img{
+
+    transform: translateX(4px);
+
+  }
+  #middle-img{
+
+    height: 193.31px;
+
+  }
+  .card-img {
+    height: 40px;
+    width: 175px;
+    transform: translateX(-7px);
+  }
+  .nav-menu a {
+    display: block;
+    position: relative;
+    color: white;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 3px;
+    /* box-shadow: 0 0 30px rgba(214, 215, 216, 0.6); */
+  }
+  #contact-us-div{
+
+    width: 100%;
+    transform: translateX(50%);
+  }
+  .contact-us{
+
+    background-size: 48% 100%;
+    border-radius: 5px;
+    /* background-color: white; */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    /* height: 900px; */
+  }
+  .testimonials .testimonial-wrap {
+    padding-left: 50px;
+    /* width: 360px; */
+  }
+  .cardos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    line-height: 1.5;
+    height: 430px;
+    width: 100%;
+  }
+  #myBtn{
+    width: 140px;
+    transform: translate(-38%,-100%);
+
+  }
+  #myBtn1{
+    width: 140px;
+    transform: translate(-38%,-71%);
+
+  }
+  #myBtn2{
+    width: 140px;
+    transform: translate(-38%,-97%);
+
+  }
+  #myBtn3{
+    width: 140px;
+    transform: translate(-38%,-75%);
+
+  }
+  #myBtn4{
+    width: 140px;
+    transform: translate(-38%,-74%);
+
+  }
+  #myBtn5{
+    width: 140px;
+    transform: translate(-38%,-74%);
+
+  }
+  
 }
 
 
 @media (max-width: 1439px) and (min-width: 1280px) {
 
- 
+  #contact-us-div{
+
+    width: 100%;
+    transform: translateX(50%);
+  }
+  .contact-us{
+
+    background-size: 48% 100%;
+    border-radius: 5px;
+    /* background-color: white; */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    /* height: 900px; */
+  }
+  #middle-img{
+
+    height: 233.33px;
+
+  }
+  #myBtn{
+
+    width: 140px;
+    transform: translate(-90px,-30px);
+  }
+  #myBtn1{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+  #myBtn2{
+
+    width: 140px;
+    transform:translate(-90px,4px);
+
+  }
+
+  #myBtn3{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+
+  #myBtn4{
+
+    width: 140px; 
+    transform: translate(-90px,-21px);
+
+  }
+
+  #myBtn5{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+  #learners{
+
+    font:'Roboto Slab Bold';
+    font-size: 20px;
+
+  }
+  #educators{
+
+    font:'Roboto Slab Bold';
+    font-size: 20px;
+
+  }
+  #enterprise{
+
+    font:'Roboto Slab Bold';
+    font-size: 20px;
+
+  }
+  #free-live-class{
+
+    font:'Roboto Slab Bold';
+    font-size: 20px;
+
+  }
+  #contacting{
+
+    font:'Roboto Slab Bold';
+    font-size: 20px;
+
+  }
+  #demo{
+
+    font:'Roboto Slab Bold';
+    font-size: 20px;
+    background-color: #8499ff;
+  }
+  #rightbox1 {
+    float: right;
+    background: white;
+    width: 48%;
+    height: 308px;
+    border: none;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 10px;
+    box-sizing: border-box;
+    /* margin: 12px; */
+    /* margin-left: 10px; */
+    /* padding-right: 100px; */
+  }
+  .features .tab-pane p{
+    font: 'Roboto Slab Regular';
+    font-size: 20px;
+  }
 }
 
 
@@ -2808,6 +3066,210 @@ input[type=submit] {
 
 @media (max-width: 1919px) and (min-width: 1440px) {
 
- 
+  .contact-us{
+
+    background-size: 48% 100%;
+    border-radius: 5px;
+    /* background-color: white; */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    /* height: 900px; */
+  }
+  #contact-us-div{
+
+    width: 100%;
+    transform: translateX(50%);
+  }
+  #myBtn{
+
+    width: 140px;
+    transform: translate(-90px,-30px);
+  }
+  #myBtn1{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+  #myBtn2{
+
+    width: 140px;
+    transform:translate(-90px,4px);
+
+  }
+
+  #myBtn3{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+
+  #myBtn4{
+
+    width: 140px; 
+    transform: translate(-90px,-21px);
+
+  }
+
+  #myBtn5{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+  #learners{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #educators{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #enterprise{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #free-live-class{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #contacting{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #demo{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+    background-color: #8499ff;
+  }
+  #middle-img{
+
+    height: 233.33px;
+
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+    /* transform: translateX(13px); */
+  }
 }
 
+@media screen and (min-width: 1920px) {
+
+  #myBtn{
+
+    width: 140px;
+    transform: translate(-90px,-30px);
+  }
+  #myBtn1{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+  #myBtn2{
+
+    width: 140px;
+    transform:translate(-90px,4px);
+
+  }
+
+  #myBtn3{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+
+  #myBtn4{
+
+    width: 140px; 
+    transform: translate(-90px,-21px);
+
+  }
+
+  #myBtn5{
+
+    width: 140px;
+    transform: translate(-90px,-21px);
+
+  }
+  .contact-us{
+
+    background-size: 48% 100%;
+    border-radius: 5px;
+    /* background-color: white; */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    /* height: 900px; */
+  }
+  #contact-us-div{
+
+    width: 100%;
+    transform: translateX(50%);
+  }
+  #learners{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #educators{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #enterprise{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #free-live-class{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #contacting{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+
+  }
+  #demo{
+
+    font:'Roboto Slab Bold';
+    font-size: 22px;
+    background-color: #8499ff;
+  }
+  #middle-img{
+
+    height: 233.33px;
+
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+    /* transform: translateX(13px); */
+  }
+}

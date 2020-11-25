@@ -44,10 +44,10 @@
         <nav class="nav-menu d-none d-lg-block">
           <ul>
             <!-- <li class="active"><a href="#hero"style="font:'Roboto Slab Bold';font-size: 22px;">Home</a></li> -->
-            <li><a onclick="tabclick(2)" href="#features" style="font:'Roboto Slab Bold';font-size: 22px;">Learners</a></li>
-            <li><a onclick="tabclick(3)" href="#features" style="font:'Roboto Slab Bold';font-size: 22px;">Educators</a></li>
-            <li><a href="#/"style="font:'Roboto Slab Bold';font-size: 22px;"><span class="button__badge">COMING SOON</span>Enterprise</a></li>
-            <li><a href="#/"style="font:'Roboto Slab Bold';font-size: 22px;"><span class="button__badge">COMING SOON</span>Free Live Classes</a></li>
+            <li><a id="learners" onclick="tabclick(2)" href="#features">Learners</a></li>
+            <li><a id="educators" onclick="tabclick(3)" href="#features" >Educators</a></li>
+            <li><a id="enterprise" href="#/"><span class="button__badge">COMING SOON</span>Enterprise</a></li>
+            <li><a id="free-live-class" href="#/"><span class="button__badge">COMING SOON</span>Free Live Classes</a></li>
             <!-- <li><a onclick="tabclick(2)" href="#features" >Free Live Classes</a></li> -->
             <!-- <li><a onclick="tabclick(3)" href="#features" >Request Demo</a></li> -->
             <!--<li><a href="#portfolio">Portfolio</a></li>
@@ -69,9 +69,9 @@
                 <li><a href="#">Drop Down 4</a></li>
               </ul>
             </li>-->
-            <li><a href="#contact" style="font: 'Roboto Slab Bold';font-size: 22px;">Contact Us</a></li>
+            <li><a id="contacting" href="#contact">Contact Us</a></li>
             <!-- <li><a onclick="tabclick(3)" href="#features" >Request Demo</a></li> -->
-            <li><a class = "request-demo-btn" id="requestdemobtn" onclick="openDemoRequest()" style="font:'Roboto Slab Bold';font-size: 22px;background-color: #8499ff;">Request Demo</a></li>
+            <li><a id="demo" class = "request-demo-btn" id="requestdemobtn" onclick="openDemoRequest()">Request Demo</a></li>
 
           </ul>
         </nav><!-- .nav-menu -->
@@ -212,7 +212,7 @@
             <li class="nav-item col-3">
               <a id="tab-3-link" class="nav-link" data-toggle="tab" href="#tab-3">
                 <!-- <i class="ri-sun-line"></i> -->
-                <div class="learner-educator">
+                <div class="learner-educator"id="edited-img">
                   <img src="assets/img/Educator.png" height="74" width="64">
                 </div>&nbsp;&nbsp;
                 <h4 class="d-none d-lg-block" style="font: 'Roboto Slab Bold';font-size: 28px;">Educators</h4>
@@ -538,8 +538,8 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="card">
-                <img src="assets/img/about-boxes-2.jpg" class="card-img-top" alt="..." style="height: 233.33px;">
+              <div class="card" >
+                <img src="assets/img/about-boxes-2.jpg" class="card-img-top" alt="..." id="middle-img">
                 <div class="card-icon">
                   <i class="ri-calendar-check-line"></i>
                 </div>
@@ -571,11 +571,12 @@
         <div class="container" data-aos="fade-up">
           <div class=" section-title" id="section-title">
             <!-- <h2>Events</h2>  -->
-            <p>Events</p>
+            <center><p>Events</p></center>
           </div>
           <div class="container">
-            <h3>Past Events</h3>
             <br>
+            <center><h3>Past Events</h3></center>
+            <br><br><br>
             <div class="card-media" onclick="openForm(0)">
               <!-- media container -->
               <div class="card-media-object-container">
@@ -871,7 +872,7 @@
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <!-- <h2>Blogs</h2> -->
-            <p>Blogs</p>
+            <center><p>Blogs</p></center>
           </div>
           
           <div class="owl-carousel testimonials-carousel">
@@ -891,7 +892,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                   <br><br>
                   <!-- <a href="https://medium.com/@zotalabs/artificial-intelligence-in-biometric-authentication-c27946c0deed" class="card-media-body-supporting-bottom-text card-media-link u-float-right">VIEW MORE</a> -->
-                  <button id="myBtn" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(0)"style="width: 140px;">View More</button>
+                  <button id="myBtn" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(0)">View More</button>
                   
                 </p>
                 
@@ -912,7 +913,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                   <br>
                   <br><br>
-                  <button id="myBtn1" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(1)" style="width: 140px; transform: translateY(-90%)">View More</button>
+                  <button id="myBtn1" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(1)" >View More</button>
                   <!-- <a href="https://medium.com/@zotalabs/ai-and-its-impact-on-search-engine-optimization-c1f1596fff6a" class="card-media-body-supporting-bottom-text card-media-link u-float-right">VIEW MORE</a> -->
                 </p>
               </div>
@@ -931,8 +932,7 @@
                   Blockchain is a revolting technology that has a comprehensive impact on business — in comparison with the transformative…
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                   <br><br>
-                  <button id="myBtn2" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(2)" style="width: 140px;-ms-transform: translateY(-18%);
-                  transform: translateY(-18%);">View More</button>
+                  <button id="myBtn2" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(2)">View More</button>
                   <!-- <a href="https://medium.com/@zotalabs/blockchain-in-insurance-industry-a53e291ee979" class="card-media-body-supporting-bottom-text card-media-link u-float-right">VIEW MORE</a> -->
                 </p>
               </div>
@@ -952,7 +952,7 @@
                   One of the substantial topics when it comes to the mobile industry has been 5G. 5G is the next big significant phase in the industry of…
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                   <br><br><br>
-                  <button id="myBtn3" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(3)" style="width: 140px; transform: translateY(-90%)">View More</button>
+                  <button id="myBtn3" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(3)">View More</button>
                   <!-- <a href="https://medium.com/@zotalabs/blockchain-in-5g-16e708c6705c " class="card-media-body-supporting-bottom-text card-media-link u-float-right">VIEW MORE</a> -->
                 </p>
               </div>
@@ -971,7 +971,7 @@
                   Connected technology is driving the future of smart homes, and the advantage of smart home…
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                   <br><br><br>
-                  <button id="myBtn4" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(4)" style="width: 140px; transform: translateY(-90%)">View More</button>
+                  <button id="myBtn4" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(4)">View More</button>
                   <!-- <a href="https://medium.com/@zotalabs/smart-homes-the-future-of-technology-984c1415780a"class="card-media-body-supporting-bottom-text card-media-link u-float-right">VIEW MORE</a> -->
                 </p>
               </div>
@@ -990,7 +990,7 @@
                   Connected technology is driving the future of smart homes, and the advantage of smart home…
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                   <br><br><br>
-                  <button id="myBtn5" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(5)" style="width: 140px; transform: translateY(-90%)">View More</button>
+                  <button id="myBtn5" class="card-media-body-supporting-bottom-text card-media-link u-float-right" onclick="openblog(5)">View More</button>
                   <!-- <a href="https://medium.com/@zotalabs/smart-homes-the-future-of-technology-984c1415780a"class="card-media-body-supporting-bottom-text card-media-link u-float-right">VIEW MORE</a> -->
                 </p>
               </div>
@@ -1076,7 +1076,7 @@
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
           <div class=" section-title">  
-            <p>Get in touch with us</p>
+            <center><p>Get in touch with us</p></center>
           </div>
 
           <!-- <div class="row">
@@ -1146,19 +1146,16 @@
           </div> -->
           <!-- <div class="textAreaColumn"> -->
           <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"></form> -->
-          <div class="contact-us"style="background-image: url('assets/img/contact_us.jpg');background-repeat:no-repeat;background-size: 50% 100% ;" >
-            <div id="contact-us-div" style="float: right;width: 96%; -ms-transform: translateX(50%); transform: translateX(50%);">
+          <div class="contact-us"style="background-image: url('assets/img/contact_us.jpg');background-repeat:no-repeat;" >
+            <div id="contact-us-div">
               <form action="https://script.google.com/macros/s/AKfycbz3QqT_e8OvimNyC42adUfszrq8i2XCW27wAu5HAiKmOy8-v27h/exec" method="POST" class="contactform">
                 <input type="text" name="name" placeholder="Name" required style="font: 'Roboto Slab Regular';font-size: 20px;">
                 <input type="text" name="mobnum" placeholder="Mobile Number" pattern="[789][0-9]{9}" required style="font: 'Roboto Slab Regular';font-size: 20px;">
                 <input type="text" name="email" placeholder="Email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required style="font: 'Roboto Slab Regular';font-size: 20px;">
-                <!-- <input type="text" name="instname" placeholder="Institute Name" required> -->
                 <input type="text" name="message"  placeholder="Message" rows="5" aria-multiline="true" multiple required style="padding-bottom: 100px;font: 'Roboto Slab Regular';font-size: 20px;"><br/>
-                <!-- <textarea id="messsage" name="message" placeholder="Type your message here" rows="5" data-rule="required"></textarea><div class="validate"></div> -->
                 <input type="submit" value="SEND" style="top: 85%; left: 20%;font: 'Roboto Regular';font-size: 20px;" onclick="showSuccessDiv()">
               </form>
             </div>
-            <!-- </div> -->
           </div>
           <br>
           <!-- </form> -->
