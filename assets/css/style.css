@@ -567,7 +567,7 @@ video {
   color: #0899F7;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
@@ -583,7 +583,7 @@ video {
     line-height: 24px;
     margin-bottom: 30px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Sections General
@@ -2672,13 +2672,22 @@ input[type=submit] {
   height: 1062px;
 }
 
-@media  screen and (max-width:319px) {
+/* media query */
 
+@media  screen and (max-width:319px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 
 @media (max-width: 359px) and (min-width: 320px) {
-
   .features .tab-pane h3 {
     font-weight: 600;
     font-size: 24px;    
@@ -2931,13 +2940,30 @@ input[type=submit] {
     height: 404px;
     transform: translateX(2%);
   }
+  #hero h1 {
+    /* font-size: 28px; */
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 
 @media (max-width: 374px) and (min-width: 360px) {
 
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 
-  
   
 }
 
@@ -3142,6 +3168,15 @@ input[type=submit] {
 
     box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
     /* transform: translate(200px,100px); */
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
   }
 }
 
@@ -3369,6 +3404,15 @@ input[type=submit] {
     font-size: 20px;
     /* width: 590px; */
   }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -3512,13 +3556,29 @@ input[type=submit] {
     /* font-family: 'Roboto Slab'; */
     font: 'Roboto Slab Bold';
   }
-
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 
 @media (max-width: 767px) and (min-width: 600px) {
 
-  
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -3648,7 +3708,9 @@ input[type=submit] {
 
 
 @media (max-width: 1279px) and (min-width: 1024px) {
-
+  #hero {
+    background-attachment: fixed;
+  }
   img {
     vertical-align: middle;
     border-style: none;
@@ -3787,7 +3849,9 @@ input[type=submit] {
 
 
 @media (max-width: 1439px) and (min-width: 1280px) {
-
+  #hero {
+    background-attachment: fixed;
+  }
   #contact-us-div{
 
     width: 100%;
@@ -3923,7 +3987,9 @@ input[type=submit] {
 
 
 @media (max-width: 1919px) and (min-width: 1440px) {
-
+  #hero {
+    background-attachment: fixed;
+  }
   .contact-us{
 
     background-size: 48% 100%;
@@ -4042,7 +4108,9 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 1920px) {
-
+  #hero {
+    background-attachment: fixed;
+  }
   #myBtn{
 
     width: 140px;
