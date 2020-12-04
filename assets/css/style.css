@@ -3963,6 +3963,26 @@ input[type=submit] {
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
     height: 900px;
   }
+  .rl1 {
+    /* position: absolute; */
+    animation: right-left 0.75s ease-in-out 1 alternate-reverse both;
+    height: 1062px;
+    transform: translatey(-349px);
+  }
+  .wrapper {
+    position: relative;
+    width: 320px;
+    margin: 50px auto;
+    perspective: 1000px;
+    height: 250px;
+    transform: translateY(213px);
+  }
+  .rl1 {
+    /* position: absolute; */
+    animation: right-left 0.75s ease-in-out 1 alternate-reverse both;
+    height: 790px;
+    transform: translateY(-349px);
+  }
 }
 
 
