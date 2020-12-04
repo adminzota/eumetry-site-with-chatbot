@@ -3857,6 +3857,26 @@ input[type=submit] {
     animation: up-down 0.75s ease-in-out 1 alternate-reverse both;
     transform: translateY(285px);
   }
+  #middle-img {
+    height: 340px; 
+  }
+  .cardos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    line-height: 1.5;
+    height: 430px;
+    width: 350px;
+    transform: translateX(86px);
+  }
 }
 
 
