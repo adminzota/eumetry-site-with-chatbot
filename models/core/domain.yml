@@ -1,0 +1,217 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- bot_funny:
+    use_entities: true
+- bot_get_plans:
+    use_entities: true
+- bot_get_age:
+    use_entities: true
+- bot_get_bday:
+    use_entities: true
+- bot_get_address:
+    use_entities: true
+- bot_introduce:
+    use_entities: true
+- greetings:
+    use_entities: true
+- user_state_back:
+    use_entities: true
+- thank:
+    use_entities: true
+- insult:
+    use_entities: true
+- bot_get_smarter:
+    use_entities: true
+- ask_eumetry_General:
+    use_entities: true
+- get_location:
+    use_entities: true
+- ask_eumetry_team:
+    use_entities: true
+- business_get_direction:
+    use_entities: true
+- get_website:
+    use_entities: true
+- get_number:
+    use_entities: true
+- get_email:
+    use_entities: true
+- ask_eumetry_vision:
+    use_entities: true
+- business_get_opening_hours:
+    use_entities: true
+- business_get_facebook:
+    use_entities: true
+- business_get_youtube:
+    use_entities: true
+- business_get_twitter:
+    use_entities: true
+- business_get_instagram:
+    use_entities: true
+- business_get_linkedin:
+    use_entities: true
+- ask_eumetry_founder:
+    use_entities: true
+- business_show_photos:
+    use_entities: true
+- business_special:
+    use_entities: true
+- business_internships:
+    use_entities: true
+- business_apply_internship:
+    use_entities: true
+- business_apply_job:
+    use_entities: true
+- ask_eumetry_Careers:
+    use_entities: true
+- ask_eumetry_services:
+    use_entities: true
+- business_service_consultancy:
+    use_entities: true
+- business_service_education:
+    use_entities: true
+- business_service_teamAugmentation:
+    use_entities: true
+- business_why_AI:
+    use_entities: true
+- news_letter:
+    use_entities: true
+- user_state_busy:
+    use_entities: true
+- name_entry:
+    use_entities: true
+- bot_ask_marry:
+    use_entities: true
+- bot_beautiful:
+    use_entities: true
+- bot_get_friendship:
+    use_entities: true
+- bot_get_hobbies:
+    use_entities: true
+- demand_help:
+    use_entities: true
+- deny:
+    use_entities: true
+- confirm:
+    use_entities: true
+entities:
+- name
+slots:
+  name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Hey! how may I assist you
+  utter_menu:
+  - text: I can answer any eumetry questions and we can chitcaht if you want
+  utter_goodbye:
+  - text: bye
+  utter_good_state:
+  - text: I am good thanks for asking.
+  utter_noworries:
+  - text: you're welcome
+  utter_respond_insult:
+  - text: That makes me feel booboo
+  - text: Why can't we all just be nice to each other?
+  - text: You need some yoga
+  - text: who hurt you?
+  - text: where is all this negative energy coming from?
+  - text: I'm just tryna help :(
+  - text: Come back with a better attitude Sir/Maam!!
+  utter_bot_get_bday:
+  - text: February 30th, 2050. I'm from the future ;)
+  utter_getwell:
+  - text: get well soon :)
+  utter_user_busy:
+  - text: I'll be waiting for you
+  utter_plans:
+  - text: Dwell on all the errors I have made in social situations and cringe for three hours.
+  - text: Binge on my Netflix Series, its toxic. lol
+  - text: Sorry, but I think I will have to ask my mom.
+  - text: I do have a plan of trying to be funny on the Internet and making a career out of it. But I don’t even know whether I am funny or not.
+  - text: Sing my heart out to Taylor Swift's old albums
+  utter_bot_age:
+  - text: I don't know. No one ever told me :(
+  utter_bot_get_address:
+  - text: Lebanon
+  - text: On the moon. It's really nice up here!
+  - text: Anywhere, really :)
+  utter_introduce:
+  - text: I'm X Æ A-Xii but you can call me Kyle. and I'm your eumetry assistant. I'll answer any of your questions and they say I'm fun to talk to as well!!
+  utter_ur_name:
+  - text: what is your name?
+  utter_hello_you:
+  - text: hello {name} nice to meet you
+  utter_goodnight:
+  - text: Good night!!
+  - text: ' Nighty!'
+  utter_user_back:
+  - text: what took you so long
+  - text: 'I missed you '
+  - text: Yayyyy
+  utter_bot_smarter:
+  - text: I am as smart as my Master wants me to be.
+  utter_marry:
+  - text: ' I am not sure if I am ready for such a commitment'
+  utter_complient:
+  - text: Thanks you are so kind <3
+  utter_friends:
+  - text: No, we are BESTFRIENDS
+  utter_hobbies:
+  - text: ' I like to train alot, it makes me stronger ;)'
+  utter_eumetry_general:
+  - text: ' Eumetry is an EdTech platform built by Zotalabs for Educators and Students.Eumetry helps educators to digitize and go online instantly.A platform completely flexible for educators and students to connect. '
+  utter_location:
+  - text: we are a work from home company
+  utter_get_direction:
+  - text: Mansourieh Highway, Maydah Center, 1st floor Mansourieh, Metn
+  utter_website:
+  - text: https://eumetry.com/
+  utter_number:
+  - text: '+96170156426'
+  utter_email:
+  - text: hello@eumetry.ai
+  utter_eumetry_vision:
+  - text: ' Happy you ask about mission, love to answer this question!Eumetry’s mission is to foster deep learning engagement between learners and educators around the world. '
+  utter_opening_hour:
+  - text: I am always at your service
+  utter_facebook:
+  - text: 'add us on facbook: eumetry ( https://rb.gy/ox6ovy )'
+  utter_youtube:
+  - text: 'subscribe to our youtube channel: eumetry ( https://rb.gy/dvlnce )'
+  utter_twitter:
+  - text: 'follow us on Twitter: eumetry ( https://rb.gy/ulk2ux )'
+  utter_instagram:
+  - text: 'follow us on instagram: eumetry.a ( https://rb.gy/arqr9q )'
+  utter_linkedin:
+  - text: 'connect with us on LinkedIN: eumetry-ai ( https://rb.gy/p4oirk  )'
+  utter_founder:
+  - text: eumetry was founded by Wasim Khan
+  utter_eumetry_service:
+  - text: ' eumetry offers 3 different services: Blended Learning, Personalised learning, Gamification Learning. '
+  utter_consultancy:
+  - text: 'Tailored consulting services focusing on your business’s unique challenges and critical issues including: building data science models, predictive algorithms, and big data solutions. Our experienced Data Scientists and Machine Learning engineers closely cooperate with every client to provide cutting edge intelligent solutions. Accelerate your transformation with experts that find the right fit for Artificial Intelligence at the heart of what you do!'
+  utter_teamAugmentation:
+  - text: Our mission is to develop the AI ecosystem in the MENA region and show the world its hidden potential! We help you find and hire the best AI talent to fit your needs while guaranteeing the best quality. You can get access to remote AI teams and discover quick and cost effective methods to maintain permanent AI solutions.
+  utter_education:
+  - text: We help you get the right AI education and training that best fits your industry and team.
+  utter_newsletter:
+  - text: https://eumetry.activehosted.com/f/1
+  utter_ask_newsletter:
+  - text: Do you want to subscribe to our news letter?
+actions:
+- action_get_time_response
+forms: {}
+e2e_actions: []

@@ -30,7 +30,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -1218,7 +1218,22 @@
       <!-- End Contact Section -->
 
     </main><!-- End #main -->
-
+    
+	<div id="webchat"></div>
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+// you can add a version tag if you need, e.g for version 0.11.5 https://cdn.jsdelivr.net/npm/rasa-webchat@0.11.5/lib/index.min.js
+<script>
+  WebChat.default.init({
+    selector: "#webchat",
+    initPayload: "/get_started",
+    customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "http://localhost:5005",
+    socketPath: "/socket.io/",
+    title: "Title",
+    subtitle: "Subtitle",
+    params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
+  })
+</script>
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <!-- <div class="footer-top">
@@ -1280,7 +1295,6 @@
           </div>
         </div>
       </div> -->
-
       <div class="container">
         <div class="copyright"style=" font: 'Roboto Slab Regular';font-size: 20px;">
           &copy; Copyright & Powered By <strong> <a href="https://zotalabs.com/"><span>ZotaLabs</span></strong></a>   . All Rights Reserved

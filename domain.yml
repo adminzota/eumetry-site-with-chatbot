@@ -1,0 +1,199 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- bot_funny
+- bot_get_plans
+- bot_get_age
+- bot_get_bday
+- bot_get_address
+- bot_introduce
+- greetings
+- user_state_back
+- thank
+- insult
+- bot_get_smarter
+- ask_eumetry_General
+- ask_eumetry_Blended
+- ask_eumetry_Personalised
+- ask_eumetry_Gamification
+- ask_eumetry_learners
+- get_offering
+- ask_eumetry_Chargeable
+- get_location
+- ask_eumetry_team
+- business_get_direction
+- get_website
+- get_number
+- get_email
+- ask_eumetry_vision
+- business_get_opening_hours
+- business_get_facebook
+- business_get_youtube
+- business_get_twitter
+- business_get_instagram
+- business_get_linkedin
+- ask_eumetry_founder
+- business_show_photos
+- business_special
+- business_internships
+- business_apply_internship
+- business_apply_job
+- ask_eumetry_Careers
+- ask_eumetry_services
+- business_service_consultancy
+- business_service_education
+- business_service_teamAugmentation
+- business_why_AI
+- news_letter
+- user_state_busy
+- name_entry
+- bot_ask_marry
+- bot_beautiful
+- bot_get_friendship
+- bot_get_hobbies
+- demand_help
+- deny
+- confirm
+- ask_eumetry_Vision
+- ask_eumetry_general
+- business_get_directions
+- eumetry_email
+entities:
+- name
+slots:
+  name:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: 'Hey! how may I assist you'
+  utter_menu:
+  - text: 'I can answer any eumetry questions and we can chitcaht if you want'
+  utter_goodbye:
+  - text: bye
+  utter_good_state:
+  - text: 'I am good thanks for asking.'
+  utter_noworries:
+  - text: you're welcome
+  utter_respond_insult:
+  - text: That makes me feel booboo
+  - text: Why can't we all just be nice to each other?
+  - text: You need some yoga
+  - text: who hurt you?
+  - text: where is all this negative energy coming from?
+  - text: I'm just tryna help :(
+  - text: Come back with a better attitude Sir/Maam!!
+  utter_bot_get_bday:
+  - text: February 30th, 2050. I'm from the future ;)
+  utter_getwell:
+  - text: get well soon :)
+  utter_user_busy:
+  - text: I'll be waiting for you
+  utter_plans:
+  - text: Dwell on all the errors I have made in social situations and cringe for
+      three hours.
+  - text: Binge on my Netflix Series, its toxic. lol
+  - text: Sorry, but I think I will have to ask my mom.
+  - text: I do have a plan of trying to be funny on the Internet and making a career
+      out of it. But I don’t even know whether I am funny or not.
+  - text: Sing my heart out to Taylor Swift's old albums
+  utter_bot_age:
+  - text: I don't know. No one ever told me :(
+  utter_bot_get_address:
+  - text: Pune
+  - text: On the moon. It's really nice up here!
+  - text: Anywhere, really :)
+  utter_introduce:
+  - text: I'm X Æ A-Xii but you can call me Kyle. and I'm your eumetry assistant.
+      I'll answer any of your questions and they say I'm fun to talk to as well!!
+  utter_ur_name:
+  - text: 'what is your name?'
+  utter_hello_you:
+  - text: 'hello {name} nice to meet you'
+  utter_goodnight:
+  - text: Good night!!
+  - text: Nighty!
+  utter_user_back:
+  - text: what took you so long
+  - text: 'I missed you '
+  - text: Yayyyy
+  utter_bot_smarter:
+  - text: I am as smart as my Master wants me to be.
+  utter_marry:
+  - text: ' I am not sure if I am ready for such a commitment'
+  utter_complient:
+  - text: Thanks you are so kind <3
+  utter_friends:
+  - text: No, we are BESTFRIENDS
+  utter_hobbies:
+  - text: ' I like to train alot, it makes me stronger ;)'
+  utter_eumetry_general:
+  - text: 'Eumetry is an EdTech platform built by Zotalabs for Educators and Students.Eumetry
+      helps educators to digitize and go online instantly.A platform completely flexible
+      for educators and students to connect. '
+  utter_eumetry_Blended:
+  - text: 'Time to upgrade from a passive teacher-centered learning culture to an active student-centered learning culture. 
+      Blended learning offers the comfort blend of traditional classroom methods with e-learning. 
+      Students have the flexibility to engage with the content and learn at their own pace.'
+  utter_eumetry_Personalised:
+  - text: 'Students learn through their individual approach. 
+      Each student obtains a "learning content" based on how he or she assesses, what he or she perceives, and what his or her abilities and passions are. 
+      Learners learn when educators connect with the desires and passions of students , allowing them the freedom to ask questions to explore and take risks.'
+  utter_eumetry_Gamification:
+  - text: 'Game based learning: The distinct contradiction between gaming and conventional education is that great games require play, 
+      and schooling rarely does. Allowing students to experiment and fail, not that its a score, 
+      but rather a chance to experience and get better it also Increases involvement, as many students have a genuine desire for competitiveness and new depths. 
+      Its evident that a focused student can learn and accomplish more than a bored one.'
+  utter_eumetry_learners:
+  - text: 'Growth in your career in various fields like Arts and creativity, Academics, Language, Soft Skills, Technology and more with top educators from all over the world with diverse learning style.
+      Holistic development for learners. Know more about holistic development.
+      Dear Learner, to excel in life diverse personality is prerequisite. 
+      Eumetry provide Holistic Development for learner. Holistic Development is development of intellectual, mental, physical, emotional, and social abilities.
+      These abilities are vitally important for success in professional fields of work. Anyone can be learners. 
+      We have educators from all around the world for school students, university students, co-operate learner etc.'
+  utter_eumetry_offering:
+  - text: 'Eumetry offers you Career counselling. 
+      With Eumetry you can track your learning pattern. 
+      To know about any other particular facility please write us on info@zotalabs.com, stating your need.'
+  utter_eumetry_Chargeable:
+  - text: 'Yes, to know more about charges provide us your email id. Contact us on info@zotalabs.com'
+  utter_location:
+  - text: '401, Fourth Floor, City Vista, Downtown Rd, Pune Maharashtra'
+  utter_get_direction:
+  - text: '401, Fourth Floor, City Vista, Downtown Rd, Pune Maharashtra'
+  utter_website:
+  - text: 'https://eumetry.com/'
+  utter_number:
+  - text: '+919560494495'
+  utter_email:
+  - text: 'info@zotalabs.com'
+  utter_eumetry_vision:
+  - text: 'Happy you ask about mission, love to answer this question!Eumetry’s mission
+      is to foster deep learning engagement between learners and educators around
+      the world.'
+  utter_opening_hour:
+  - text: 'I am always at your service'
+  utter_facebook:
+  - text: 'add us on facbook: eumetry ( https://www.facebook.com/474686879957924/)'
+  utter_youtube:
+  - text: 'subscribe to our youtube channel: eumetry ( https://www.youtube.com/channel/UCyD1AeMtCyDb-eSI0DhwHMA )'
+  utter_twitter:
+  - text: 'follow us on Twitter: eumetry ( https://twitter.com/zotalabs?s=08 )'
+  utter_instagram:
+  - text: 'follow us on instagram: eumetry ( https://instagram.com/zotalabs?igshid=8c2pktu7ekra )'
+  utter_linkedin:
+  - text: 'connect with us on LinkedIN: eumetry ( https://www.linkedin.com/company/zotalabs )'
+  utter_founder:
+  - text: eumetry was founded by Wasim Khan
+  utter_eumetry_service:
+  - text: ' eumetry offers 3 different services: Blended Learning, Personalised learning,
+      Gamification Learning.'
+  utter_newsletter:
+  - text: https://eumetry.com/
+  utter_ask_newsletter:
+  - text: 'Do you want to subscribe to our news letter?'
+actions:
+- action_get_time_response
